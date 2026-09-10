@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ram Krupa Tour & Travels – Junagadh | Ertiga • Brezza • Tempo • Urbania • Bus</title>
 <meta name="description" content="Ram Krupa Tour & Travels Junagadh – One-Way, Round Trip, Local, Airport & Railway Pickup, Parcel Service. Ertiga, Brezza, Eco, Tempo, Urbania, 46-Seat Bus. 24x7 Book on WhatsApp." />
+<link rel="icon" type="image/png" href="asset/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -25,7 +26,7 @@ button{font-family:inherit;touch-action:manipulation}
 .guj{font-family:'Noto Sans Gujarati',sans-serif}
 /* Preloader */
 #loader{position:fixed;inset:0;background:#070B11;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px}
-#loader .logo-ring{width:86px;height:86px;border-radius:50%;border:3px solid rgba(255,106,0,.2);border-top-color:var(--saffron);animation:spin 1s linear infinite;display:grid;place-items:center;font-weight:800;font-size:28px;color:var(--saffron)}
+#loader .logo-ring{width:110px;height:110px;border-radius:50%;border:3px solid rgba(255,106,0,.2);border-top-color:var(--saffron);animation:spin 1s linear infinite;display:grid;place-items:center;overflow:hidden;background:#fff;padding:8px}
 @keyframes spin{to{transform:rotate(360deg)}}
 #loadPct{font-size:13px;letter-spacing:.3em;color:var(--muted)}
 /* Topbar */
@@ -36,7 +37,8 @@ button{font-family:inherit;touch-action:manipulation}
 nav{position:sticky;top:0;z-index:100;background:rgba(11,15,20,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px}
 .brand{display:flex;align-items:center;gap:12px;min-width:0}
-.brand-mark{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--saffron),#FF2D55);display:grid;place-items:center;font-weight:800;font-size:20px;box-shadow:0 8px 24px rgba(255,106,0,.4)}
+.brand-mark{width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center;overflow:hidden;flex-shrink:0;border:2px solid rgba(255,106,0,.5);box-shadow:0 8px 24px rgba(255,106,0,.4)}
+.brand-mark img{width:100%;height:100%;object-fit:cover}
 .brand h1{font-size:18px;line-height:1.1}
 .brand h1 span{color:var(--saffron2)}
 .brand small{color:var(--muted);font-size:12px;letter-spacing:.08em}
@@ -99,9 +101,9 @@ section{padding:64px 0}
 .fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .f-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;position:relative;transition:.3s}
 .f-card:hover{transform:translateY(-8px);border-color:rgba(255,106,0,.5);box-shadow:0 24px 60px rgba(255,106,0,.18)}
-.f-img{height:210px;overflow:hidden;position:relative}
-.f-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
-.f-card:hover .f-img img{transform:scale(1.08)}
+.f-img{height:230px;overflow:hidden;position:relative;background:#fff}
+.f-img img{width:100%;height:100%;object-fit:contain;padding:10px;transition:.6s}
+.f-card:hover .f-img img{transform:scale(1.06)}
 .f-img .seat{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:800;border:1px solid rgba(255,255,255,.2)}
 .f-img .price{position:absolute;right:12px;top:12px;background:var(--green);color:#06280F;padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:800}
 .f-body{padding:18px}
@@ -128,8 +130,9 @@ section{padding:64px 0}
 .route a{background:rgba(37,211,102,.15);color:#7CFFB0;border:1px solid rgba(37,211,102,.35);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
 /* Why */
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
-.why-img{border-radius:24px;overflow:hidden;border:1px solid var(--line);position:relative;min-height:420px}
-.why-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why-img{border-radius:24px;overflow:hidden;border:1px solid var(--line);position:relative;min-height:420px;background:#fff;display:grid;place-items:center;padding:18px}
+.why-img img{position:relative;width:100%;height:100%;max-height:420px;object-fit:contain}
+.why-img .why-badge{position:absolute;left:14px;bottom:14px;background:rgba(0,0,0,.78);padding:9px 14px;border-radius:999px;font-size:12.5px;font-weight:800;border:1px solid rgba(255,255,255,.2)}
 .why-list{display:grid;gap:14px;margin-top:18px}
 .why-item{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
 .why-item i{width:42px;height:42px;flex-shrink:0;border-radius:12px;background:rgba(255,106,0,.15);color:var(--saffron2);display:grid;place-items:center;font-size:18px}
@@ -222,7 +225,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 110px;color:var(--muted);
 </head>
 <body>
 
-<div id="loader"><div class="logo-ring">શ્રી</div><div style="font-weight:800">RAM KRUPA <span style="color:var(--saffron2)">TOUR & TRAVELS</span></div><div id="loadPct">0%</div></div>
+<div id="loader"><div class="logo-ring"><img src="asset/logo.png" alt="Ram Krupa logo"></div><div style="font-weight:800">RAM KRUPA <span style="color:var(--saffron2)">TOUR & TRAVELS</span></div><div id="loadPct">0%</div></div>
 
 <div class="topbar"><div class="topbar-inner" id="topTrack">
 <span>📞 88665 74486 &nbsp; • &nbsp; 📞 98245 49033 &nbsp; • &nbsp; 📞 90541 00649 &nbsp; • &nbsp; 📞 79904 43834 &nbsp; • &nbsp; 🚕 One-Way • Round Trip • Local &nbsp; • &nbsp; ✈️ Airport Pickup & Drop &nbsp; • &nbsp; 🚂 Railway Pickup & Drop &nbsp; • &nbsp; 📦 Parcel Service &nbsp; • &nbsp; 🕉️ રામ કૃપા ટુર ટ્રાવેલ્સ – જુનાગઢ &nbsp; • &nbsp;</span>
@@ -231,7 +234,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 110px;color:var(--muted);
 
 <nav>
 <div class="container nav-inner">
-<div class="brand"><div class="brand-mark">RK</div><div><h1>RAM KRUPA <span>TOUR & TRAVELS</span></h1><small class="guj">જુનાગઢ • 24x7 સેવા • Since Trusted</small></div></div>
+<div class="brand"><div class="brand-mark"><img src="asset/logo.png" alt="Ram Krupa"></div><div><h1>RAM KRUPA <span>TOUR & TRAVELS</span></h1><small class="guj">જુનાગઢ • 24x7 સેવા • Since Trusted</small></div></div>
 <div class="nav-links" id="navLinks">
 <a href="#fleet">Fleet</a><a href="#services">Services</a><a href="#routes">Routes</a><a href="#why">Why Us</a><a href="#booking">Booking</a><a href="#contact">Contact</a>
 </div>
@@ -271,7 +274,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 110px;color:var(--muted);
 <div class="pill" data-v="Local">Local</div>
 </div>
 <div class="f-row"><div><label>Pickup City</label><input id="qPickup" placeholder="e.g. Junagadh"></div><div><label>Drop City</label><input id="qDrop" placeholder="e.g. Rajkot"></div></div>
-<div class="f-row"><div><label>Date</label><input id="qDate" type="date"></div><div><label>Vehicle</label><select id="qVeh"><option>Ertiga (6+1)</option><option>Brezza SUV (4+1)</option><option>Eco (6+1)</option><option>Tempo Traveller (12-17)</option><option>Urbania Premium</option><option>46-Seat Bus</option></select></div></div>
+<div class="f-row"><div><label>Date</label><input id="qDate" type="date"></div><div><label>Vehicle</label><select id="qVeh"><option>Ertiga (6+1)</option><option>Ertiga Tour M (6+1)</option><option>Brezza SUV (4+1)</option><option>Dzire Sedan (4+1)</option><option>Eco (6+1)</option><option>Toofan (8+1)</option><option>Tempo Traveller (12-17)</option><option>Urbania Premium</option><option>46-Seat Bus</option></select></div></div>
 <button class="btn btn-wa book-btn" onclick="quickBook()"><i class="fa-brands fa-whatsapp"></i> Check Price on WhatsApp</button>
 <div class="alt-call">or Call: <a href="tel:+918866574486">88665 74486</a> • <a href="tel:+919824549033">98245 49033</a></div>
 </div>
@@ -286,17 +289,23 @@ footer{border-top:1px solid var(--line);padding:28px 0 110px;color:var(--muted);
 <div class="sec-head reveal"><div class="eyebrow">Our Fleet</div><h2>Ertiga to 46-Seat Bus — <span style="color:var(--saffron2)">clean & A/C</span></h2><p class="guj">સ્વચ્છ & A/C કાર • ટેન્ડ અને અનુભવી ડ્રાઈવર • ટ્રાન્સપરન્ટ ભાડું. Tap WhatsApp to get exact fare in 2 minutes.</p></div>
 <div class="fleet-grid">
 
-<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=800&auto=format&fit=crop" alt="Ertiga"><span class="seat">👥 6+1 Seater</span><span class="price">Most Booked</span></div><div class="f-body"><h3>Ertiga <small>Family Favourite</small></h3><p class="guj">અર્ટિગા – Family tour, long route comfort, extra luggage space.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ Pushback</span><span class="tag">One-Way Special</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20ERTIGA%20for%20my%20trip"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/ertiga.jpeg" alt="Ertiga"><span class="seat">👥 6+1 Seater</span><span class="price">Most Booked</span></div><div class="f-body"><h3>Ertiga <small>Family Favourite</small></h3><p class="guj">અર્ટિગા – Family tour, long route comfort, extra luggage space.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ Pushback</span><span class="tag">One-Way Special</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20ERTIGA%20for%20my%20trip"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
 
-<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" alt="Brezza SUV"><span class="seat">👥 4+1 SUV</span><span class="price">Premium SUV</span></div><div class="f-body"><h3>Maruti Brezza <small>SUV Style</small></h3><p class="guj">મારુતિ સુઝુકી બ્રેઝા – Business travel, stylish & safe highway ride.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ High Ground</span><span class="tag">Airport Best</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20BREZZA%20SUV"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/brezza.jpeg" alt="Brezza SUV"><span class="seat">👥 4+1 SUV</span><span class="price">Premium SUV</span></div><div class="f-body"><h3>Maruti Brezza <small>SUV Style</small></h3><p class="guj">મારુતિ સુઝુકી બ્રેઝા – Business travel, stylish & safe highway ride.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ High Ground</span><span class="tag">Airport Best</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20BREZZA%20SUV"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
 
-<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop" alt="Eeco Van"><span class="seat">👥 6+1 Budget</span><span class="price">Low Fare</span></div><div class="f-body"><h3>Eco Van <small>Budget King</small></h3><p class="guj">ઈકો – Local trip, short distance & parcel friendly low budget.</p><div class="f-meta"><span class="tag">✔ Budget</span><span class="tag">✔ Local Best</span><span class="tag">✔ Parcel</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919054100649?text=Hello%2C%20I%20want%20to%20book%20ECO%20van"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919054100649"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/eeco.jpeg" alt="Eeco Van"><span class="seat">👥 6+1 Budget</span><span class="price">Low Fare</span></div><div class="f-body"><h3>Eco Van <small>Budget King</small></h3><p class="guj">ઈકો – Local trip, short distance & parcel friendly low budget.</p><div class="f-meta"><span class="tag">✔ Budget</span><span class="tag">✔ Local Best</span><span class="tag">✔ Parcel</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919054100649?text=Hello%2C%20I%20want%20to%20book%20ECO%20van"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919054100649"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
 
-<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&auto=format&fit=crop" alt="Tempo Traveller"><span class="seat">👥 12 / 17 Seater</span><span class="price">Group Best</span></div><div class="f-body"><h3>Tempo Traveller <small>12-17 Seat</small></h3><p class="guj">ટેમ્પો બસ – Barat, family group, Somnath-Dwarka yatra special.</p><div class="f-meta"><span class="tag">✔ Pushback</span><span class="tag">✔ Music</span><span class="tag">Yatra Special</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20TEMPO%20TRAVELLER"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/tempo.jpeg" alt="Tempo Traveller"><span class="seat">👥 12 / 17 Seater</span><span class="price">Group Best</span></div><div class="f-body"><h3>Tempo Traveller <small>12-17 Seat</small></h3><p class="guj">ટેમ્પો બસ – Barat, family group, Somnath-Dwarka yatra special.</p><div class="f-meta"><span class="tag">✔ Pushback</span><span class="tag">✔ Music</span><span class="tag">Yatra Special</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20TEMPO%20TRAVELLER"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
 
-<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=800&auto=format&fit=crop" alt="Urbania"><span class="seat">👥 12-17 Luxury</span><span class="price">Premium</span></div><div class="f-body"><h3>Urbania Bus <small>Premium Traveller</small></h3><p class="guj">અર્બનિયા બસ – Premium feel, wedding / corporate / VIP movement.</p><div class="f-meta"><span class="tag">✔ Luxury</span><span class="tag">✔ A/C</span><span class="tag">Wedding</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/917990443834?text=Hello%2C%20I%20want%20to%20book%20URBANIA%20BUS"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+917990443834"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/urbania.jpeg" alt="Urbania"><span class="seat">👥 12-17 Luxury</span><span class="price">Premium</span></div><div class="f-body"><h3>Urbania Bus <small>Premium Traveller</small></h3><p class="guj">અર્બનિયા બસ – Premium feel, wedding / corporate / VIP movement.</p><div class="f-meta"><span class="tag">✔ Luxury</span><span class="tag">✔ A/C</span><span class="tag">Wedding</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/917990443834?text=Hello%2C%20I%20want%20to%20book%20URBANIA%20BUS"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+917990443834"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
 
-<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop" alt="Large Bus"><span class="seat">👥 30 / 46 Seater</span><span class="price">Bus</span></div><div class="f-body"><h3>Large Bus <small>30-46 Seat</small></h3><p>Full bus for baraat, school, company, yatra – Junagadh to all Gujarat.</p><div class="f-meta"><span class="tag">✔ 46 Seat</span><span class="tag">✔ Tour</span><span class="tag">Best Rate</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919824549033?text=Hello%2C%20I%20want%20to%20book%2046-SEAT%20BUS"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/bus-46.jpeg" alt="Large Bus"><span class="seat">👥 30 / 46 Seater</span><span class="price">Bus</span></div><div class="f-body"><h3>Large Bus <small>30-46 Seat</small></h3><p>Full bus for baraat, school, company, yatra – Junagadh to all Gujarat.</p><div class="f-meta"><span class="tag">✔ 46 Seat</span><span class="tag">✔ Tour</span><span class="tag">Best Rate</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919824549033?text=Hello%2C%20I%20want%20to%20book%2046-SEAT%20BUS"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/dzire.jpeg" alt="Swift Dzire Sedan"><span class="seat">👥 4+1 Sedan</span><span class="price">Comfort</span></div><div class="f-body"><h3>Swift Dzire <small>Sedan Comfort</small></h3><p>One-Way / airport sedan – smooth, mileage best, couple & business best.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ Sedan</span><span class="tag">One-Way</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20DZIRE%20SEDAN"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/toofan.jpeg" alt="Force Toofan"><span class="seat">👥 8+1 Rugged</span><span class="price">Rural Best</span></div><div class="f-body"><h3>Force Toofan <small>Heavy Duty</small></h3><p class="guj">ટુફાન – village road, farm, group & luggage heavy duty ride.</p><div class="f-meta"><span class="tag">✔ Strong</span><span class="tag">✔ 9 Seat</span><span class="tag">Group</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919824549033?text=Hello%2C%20I%20want%20to%20book%20TOOFAN"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="asset/ertiga-tour-m.jpeg" alt="Ertiga Tour M"><span class="seat">👥 6+1 MPV</span><span class="price">Tour M</span></div><div class="f-body"><h3>Ertiga Tour M <small>Extra Space</small></h3><p>Tour-M edition – yatra & long family trip, extra comfort + carrier.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ Yatra</span><span class="tag">Family</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919054100649?text=Hello%2C%20I%20want%20to%20book%20ERTIGA%20TOUR%20M"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919054100649"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
 
 </div></div></section>
 
@@ -320,7 +329,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 110px;color:var(--muted);
 </div></section>
 
 <section id="why"><div class="container why-grid">
-<div class="why-img reveal"><img src="https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?q=80&w=900&auto=format&fit=crop" alt="Driver"></div>
+<div class="why-img reveal"><img src="asset/ertiga-tour-m.jpeg" alt="Ram Krupa Fleet"><span class="why-badge">⭐ Real Fleet • Real Photos</span></div>
 <div><div class="eyebrow reveal">Why Ram Krupa?</div><h2 class="reveal" style="font-size:clamp(28px,3.5vw,40px);margin:10px 0">ગુજરાતમાં વિશ્વાસનું નામ</h2><p class="reveal" style="color:var(--muted)">Your every journey – comfortable, safe & memorable. Clean car, trained driver, right price.</p>
 <div class="why-list">
 <div class="why-item reveal"><i class="fa-solid fa-snowflake"></i><div><b>Clean & A/C Cars</b><br><span style="color:var(--muted);font-size:14px">Neat interior, chilled AC, sanitized before every trip.</span></div></div>
@@ -336,7 +345,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 110px;color:var(--muted);
 <div class="f-row"><div><label>Your Name *</label><input id="bName" placeholder="e.g. Amit Patel"></div><div><label>Mobile *</label><input id="bPhone" placeholder="e.g. 98765 43210"></div></div>
 <div class="f-row"><div><label>Pickup *</label><input id="bPickup" placeholder="Junagadh"></div><div><label>Drop *</label><input id="bDrop" placeholder="Ahmedabad Airport"></div></div>
 <div class="f-row"><div><label>Date *</label><input id="bDate" type="date"></div><div><label>Time</label><input id="bTime" type="time"></div></div>
-<div class="f-row"><div><label>Trip Type</label><select id="bType"><option>One-Way</option><option>Round Trip</option><option>Local</option><option>Airport Pickup/Drop</option><option>Railway Pickup/Drop</option><option>Wedding / Function</option></select></div><div><label>Vehicle</label><select id="bVeh"><option>Ertiga</option><option>Brezza</option><option>Eco</option><option>Tempo Traveller</option><option>Urbania</option><option>46-Seat Bus</option><option>Any / Cheapest</option></select></div></div>
+<div class="f-row"><div><label>Trip Type</label><select id="bType"><option>One-Way</option><option>Round Trip</option><option>Local</option><option>Airport Pickup/Drop</option><option>Railway Pickup/Drop</option><option>Wedding / Function</option></select></div><div><label>Vehicle</label><select id="bVeh"><option>Ertiga</option><option>Ertiga Tour M</option><option>Brezza</option><option>Dzire</option><option>Eco</option><option>Toofan</option><option>Tempo Traveller</option><option>Urbania</option><option>46-Seat Bus</option><option>Any / Cheapest</option></select></div></div>
 <label>Note</label><textarea id="bNote" rows="2" placeholder="e.g. 4 persons + luggage, early morning pickup"></textarea>
 <button class="btn btn-wa book-btn" onclick="fullBook()"><i class="fa-brands fa-whatsapp"></i> Confirm on WhatsApp</button>
 </div>
