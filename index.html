@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ram Krupa Tour & Travels – Junagadh | Ertiga • Brezza • Tempo • Urbania • Bus</title>
+<meta name="description" content="Ram Krupa Tour & Travels Junagadh – One-Way, Round Trip, Local, Airport & Railway Pickup, Parcel Service. Ertiga, Brezza, Eco, Tempo, Urbania, 46-Seat Bus. 24x7 Book on WhatsApp." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --bg:#0B0F14; --bg2:#111927; --card:#151E2E; --line:rgba(255,255,255,.1);
+  --saffron:#FF6A00; --saffron2:#FFB300; --green:#25D366; --muted:#9AA8BF;
+  --text:#F2F6FC; --radius:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans','Noto Sans Gujarati',system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.container{width:min(1200px,92%);margin:0 auto}
+.guj{font-family:'Noto Sans Gujarati',sans-serif}
+/* Preloader */
+#loader{position:fixed;inset:0;background:#070B11;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px}
+#loader .logo-ring{width:86px;height:86px;border-radius:50%;border:3px solid rgba(255,106,0,.2);border-top-color:var(--saffron);animation:spin 1s linear infinite;display:grid;place-items:center;font-weight:800;font-size:28px;color:var(--saffron)}
+@keyframes spin{to{transform:rotate(360deg)}}
+#loadPct{font-size:13px;letter-spacing:.3em;color:var(--muted)}
+/* Topbar */
+.topbar{background:linear-gradient(90deg,#FF6A00,#FF9A00);color:#1A1000;font-size:13.5px;font-weight:700;overflow:hidden;white-space:nowrap}
+.topbar-inner{display:flex;gap:28px;padding:8px 0;animation:marqueeTop 22s linear infinite;width:max-content}
+@keyframes marqueeTop{to{transform:translateX(-50%)}}
+/* Nav */
+nav{position:sticky;top:0;z-index:100;background:rgba(11,15,20,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--saffron),#FF2D55);display:grid;place-items:center;font-weight:800;font-size:20px;box-shadow:0 8px 24px rgba(255,106,0,.4)}
+.brand h1{font-size:18px;line-height:1.1}
+.brand h1 span{color:var(--saffron2)}
+.brand small{color:var(--muted);font-size:12px;letter-spacing:.08em}
+.nav-links{display:flex;gap:22px;font-size:14.5px;font-weight:600;color:#D6DEEB}
+.nav-links a{opacity:.85}.nav-links a:hover{color:#fff;opacity:1}
+.nav-cta{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 20px;border-radius:999px;font-weight:800;font-size:14.5px;border:1px solid transparent;cursor:pointer;transition:.25s}
+.btn-wa{background:var(--green);color:#06280F;box-shadow:0 10px 28px rgba(37,211,102,.35)}
+.btn-wa:hover{transform:translateY(-2px) scale(1.02)}
+.btn-call{background:#fff;color:#111}
+.btn-ghost{border-color:var(--line);color:#fff;background:rgba(255,255,255,.06)}
+.hamburger{display:none;background:none;border:0;color:#fff;font-size:22px}
+/* Hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 500px at 80% -10%,rgba(255,106,0,.28),transparent),radial-gradient(700px 500px at 10% 10%,rgba(37,211,102,.12),transparent),#0B0F14}
+.hero-bg{position:absolute;inset:0;opacity:.28}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,15,20,.55),rgba(11,15,20,.92) 75%,#0B0F14)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;padding:56px 0 36px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,179,0,.14);border:1px solid rgba(255,179,0,.35);color:#FFD88A;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:#25D366;box-shadow:0 0 0 6px rgba(37,211,102,.2);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 2px rgba(37,211,102,.25)}}
+.hero h2{font-size:clamp(36px,5.2vw,62px);line-height:1.02;margin:18px 0 12px;font-weight:800;letter-spacing:-.02em}
+.hero h2 .grad{background:linear-gradient(90deg,#FF6A00,#FFB300,#FF6A00);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{color:#C6D2E4;font-size:17px;line-height:1.7;max-width:560px}
+.hero p.sub strong{color:#fff}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.stat{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}
+.stat b{font-size:22px;display:block}
+.stat span{font-size:12.5px;color:var(--muted)}
+/* Booking card */
+.book-card{background:rgba(21,30,46,.92);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.5);position:relative;overflow:hidden}
+.book-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--saffron),var(--saffron2),var(--green))}
+.book-card h3{font-size:20px;display:flex;align-items:center;gap:10px}
+.book-card h3 i{color:var(--green)}
+.book-card p{color:var(--muted);font-size:13.5px;margin:6px 0 16px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.f-row.full{grid-template-columns:1fr}
+label{font-size:12px;font-weight:700;color:#CBD6E8;letter-spacing:.04em;margin-bottom:6px;display:block}
+input,select,textarea{width:100%;background:#0D1420;border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:12px;padding:12px 13px;font-size:14.5px;outline:none;font-family:inherit}
+input:focus,select:focus{border-color:var(--saffron)}
+.trip-pills{display:flex;gap:8px;margin-bottom:12px}
+.pill{flex:1;text-align:center;padding:10px;border-radius:12px;border:1px solid var(--line);font-size:13px;font-weight:800;cursor:pointer;background:#0D1420;color:#B9C6DA}
+.pill.active{background:linear-gradient(135deg,#FF6A00,#FF9A00);color:#1A1000;border-color:transparent}
+.book-btn{width:100%;justify-content:center;font-size:16px;padding:15px;margin-top:6px}
+.alt-call{text-align:center;margin-top:10px;font-size:13.5px;color:var(--muted)}
+.alt-call a{color:#fff;font-weight:800}
+/* Marquee cities */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0E1522;overflow:hidden;padding:14px 0;margin-top:18px}
+.marquee-track{display:flex;gap:12px;width:max-content;animation:marqueeTop 28s linear infinite}
+.city{padding:9px 18px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid var(--line);font-weight:700;font-size:14px;white-space:nowrap}
+.city i{color:var(--saffron2);margin-right:7px}
+/* Sections */
+section{padding:64px 0}
+.sec-head{max-width:720px;margin-bottom:28px}
+.eyebrow{color:var(--saffron2);font-weight:800;letter-spacing:.18em;font-size:12px;text-transform:uppercase}
+.sec-head h2{font-size:clamp(28px,3.6vw,42px);margin:10px 0;line-height:1.1}
+.sec-head p{color:var(--muted);line-height:1.7}
+/* Fleet */
+.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.f-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;position:relative;transition:.3s}
+.f-card:hover{transform:translateY(-8px);border-color:rgba(255,106,0,.5);box-shadow:0 24px 60px rgba(255,106,0,.18)}
+.f-img{height:210px;overflow:hidden;position:relative}
+.f-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.f-card:hover .f-img img{transform:scale(1.08)}
+.f-img .seat{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:800;border:1px solid rgba(255,255,255,.2)}
+.f-img .price{position:absolute;right:12px;top:12px;background:var(--green);color:#06280F;padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:800}
+.f-body{padding:18px}
+.f-body h3{font-size:19px}
+.f-body h3 small{color:var(--saffron2);font-size:13px}
+.f-body p{color:var(--muted);font-size:14px;margin:8px 0 14px;line-height:1.6}
+.f-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tag{font-size:12px;font-weight:700;background:rgba(255,255,255,.08);border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:#D6DEEB}
+.f-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini-btn{padding:11px;border-radius:12px;font-weight:800;font-size:13.5px;text-align:center;display:flex;align-items:center;justify-content:center;gap:7px}
+.mini-wa{background:rgba(37,211,102,.15);border:1px solid rgba(37,211,102,.4);color:#7CFFB0}
+.mini-call{background:#fff;color:#111}
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:20px;padding:22px;transition:.3s}
+.svc:hover{border-color:rgba(255,179,0,.5);transform:translateY(-4px)}
+.svc i{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:20px;background:linear-gradient(135deg,var(--saffron),#FF2D55);margin-bottom:14px}
+.svc h4{font-size:17px;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:14px;line-height:1.65}
+/* Routes */
+.routes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.route{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.route b{font-size:14.5px;display:block}.route span{font-size:12.5px;color:var(--muted)}
+.route a{background:rgba(37,211,102,.15);color:#7CFFB0;border:1px solid rgba(37,211,102,.35);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+/* Why */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+.why-img{border-radius:24px;overflow:hidden;border:1px solid var(--line);position:relative;min-height:420px}
+.why-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why-list{display:grid;gap:14px;margin-top:18px}
+.why-item{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.why-item i{width:42px;height:42px;flex-shrink:0;border-radius:12px;background:rgba(255,106,0,.15);color:var(--saffron2);display:grid;place-items:center;font-size:18px}
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.phones{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.phone-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.phone-card b{font-size:18px;letter-spacing:.02em}
+.phone-card span{color:var(--muted);font-size:13px;display:block;margin:4px 0 12px}
+.phone-card .row{display:flex;gap:8px}
+.icon-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:10px;border-radius:11px;font-weight:800;font-size:13px}
+.ib-wa{background:var(--green);color:#06280F}.ib-call{background:#fff;color:#111}
+.info-card{background:linear-gradient(135deg,#FF6A00,#FF2D55);border-radius:18px;padding:22px;color:#fff}
+.info-card a{color:#fff}
+/* Footer */
+footer{border-top:1px solid var(--line);padding:28px 0 110px;color:var(--muted);font-size:13.5px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+/* Floating */
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:200;display:flex;flex-direction:column;gap:10px}
+.float-wa a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:26px;box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.fw-wa{background:var(--green);color:#06280F;animation:pulse 1.8s infinite}
+.fw-call{background:#fff;color:#111}
+/* Reveal defaults for GSAP */
+.reveal{opacity:0}
+/* Responsive */
+@media(max-width:960px){
+  .hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
+  .fleet-grid,.svc-grid{grid-template-columns:1fr 1fr}
+  .routes{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;background:#0E1522;flex-direction:column;padding:18px 5%;border-bottom:1px solid var(--line)}
+  .hamburger{display:block}
+  .hero-stats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){.fleet-grid,.svc-grid,.phones{grid-template-columns:1fr}.routes{grid-template-columns:1fr}.f-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div id="loader"><div class="logo-ring">શ્રી</div><div style="font-weight:800">RAM KRUPA <span style="color:var(--saffron2)">TOUR & TRAVELS</span></div><div id="loadPct">0%</div></div>
+
+<div class="topbar"><div class="topbar-inner" id="topTrack">
+<span>📞 88665 74486 &nbsp; • &nbsp; 📞 98245 49033 &nbsp; • &nbsp; 📞 90541 00649 &nbsp; • &nbsp; 📞 79904 43834 &nbsp; • &nbsp; 🚕 One-Way • Round Trip • Local &nbsp; • &nbsp; ✈️ Airport Pickup & Drop &nbsp; • &nbsp; 🚂 Railway Pickup & Drop &nbsp; • &nbsp; 📦 Parcel Service &nbsp; • &nbsp; 🕉️ રામ કૃપા ટુર ટ્રાવેલ્સ – જુનાગઢ &nbsp; • &nbsp;</span>
+<span>📞 88665 74486 &nbsp; • &nbsp; 📞 98245 49033 &nbsp; • &nbsp; 📞 90541 00649 &nbsp; • &nbsp; 📞 79904 43834 &nbsp; • &nbsp; 🚕 One-Way • Round Trip • Local &nbsp; • &nbsp; ✈️ Airport Pickup & Drop &nbsp; • &nbsp; 🚂 Railway Pickup & Drop &nbsp; • &nbsp; 📦 Parcel Service &nbsp; • &nbsp; 🕉️ રામ કૃપા ટુર ટ્રાવેલ્સ – જુનાગઢ &nbsp; • &nbsp;</span>
+</div></div>
+
+<nav>
+<div class="container nav-inner">
+<div class="brand"><div class="brand-mark">RK</div><div><h1>RAM KRUPA <span>TOUR & TRAVELS</span></h1><small class="guj">જુનાગઢ • 24x7 સેવા • Since Trusted</small></div></div>
+<div class="nav-links" id="navLinks">
+<a href="#fleet">Fleet</a><a href="#services">Services</a><a href="#routes">Routes</a><a href="#why">Why Us</a><a href="#booking">Booking</a><a href="#contact">Contact</a>
+</div>
+<div class="nav-cta">
+<a class="btn btn-wa" href="https://wa.me/918866574486?text=Hello%20Ram%20Krupa%20Travels%2C%20I%20want%20to%20book%20a%20car" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+<button class="hamburger" id="ham"><i class="fa-solid fa-bars"></i></button>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="hero-bg"><img id="heroBgImg" src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1920&auto=format&fit=crop" alt="Highway travel"></div>
+<div class="container hero-grid">
+<div>
+<div class="badge hero-anim"><span class="dot"></span> JUNAGADH • 24x7 AVAILABLE • AC CARS</div>
+<h2 class="hero-anim">ગુજરાતમાં <span class="grad">ગમે ત્યાં ગાડી</span> મળી જશે.</h2>
+<p class="sub hero-anim"><strong>Ram Krupa Tour & Travels – Junagadh.</strong> <span class="guj">અર્ટિગા, બ્રેઝા, ઈકો, ટેમ્પો બસ, અર્બનિયા બસ, 46-સીટ બસ.</span><br>One-Way • Round Trip • Local Trip • Airport / Railway Pickup & Drop • Parcel Service.</p>
+<div class="hero-actions hero-anim">
+<a class="btn btn-wa" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20One-Way%20%2F%20Round%20Trip%20car%20from%20Junagadh" target="_blank"><i class="fa-brands fa-whatsapp"></i> Book on WhatsApp</a>
+<a class="btn btn-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> 88665 74486</a>
+<a class="btn btn-ghost" href="#fleet"><i class="fa-solid fa-car"></i> View Fleet</a>
+</div>
+<div class="hero-stats hero-anim">
+<div class="stat"><b><span class="counter" data-target="10">0</span>+</b><span>Years Experience</span></div>
+<div class="stat"><b><span class="counter" data-target="15">0</span>+</b><span>Cars & Buses</span></div>
+<div class="stat"><b><span class="counter" data-target="50000">0</span>+</b><span>Happy Trips</span></div>
+<div class="stat"><b>24x7</b><span>Support</span></div>
+</div>
+</div>
+
+<div class="book-card hero-anim" id="bookingMini">
+<h3><i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Booking</h3>
+<p>Fill details → tap Book → opens WhatsApp with ready message. No advance confusion.</p>
+<div class="trip-pills" id="tripPills">
+<div class="pill active" data-v="One-Way">One-Way</div>
+<div class="pill" data-v="Round Trip">Round Trip</div>
+<div class="pill" data-v="Local">Local</div>
+</div>
+<div class="f-row"><div><label>Pickup City</label><input id="qPickup" placeholder="e.g. Junagadh"></div><div><label>Drop City</label><input id="qDrop" placeholder="e.g. Rajkot"></div></div>
+<div class="f-row"><div><label>Date</label><input id="qDate" type="date"></div><div><label>Vehicle</label><select id="qVeh"><option>Ertiga (6+1)</option><option>Brezza SUV (4+1)</option><option>Eco (6+1)</option><option>Tempo Traveller (12-17)</option><option>Urbania Premium</option><option>46-Seat Bus</option></select></div></div>
+<button class="btn btn-wa book-btn" onclick="quickBook()"><i class="fa-brands fa-whatsapp"></i> Check Price on WhatsApp</button>
+<div class="alt-call">or Call: <a href="tel:+918866574486">88665 74486</a> • <a href="tel:+919824549033">98245 49033</a></div>
+</div>
+</div>
+
+<div class="marquee"><div class="marquee-track" id="cityTrack">
+<span class="city"><i class="fa-solid fa-location-dot"></i>Rajkot</span><span class="city"><i class="fa-solid fa-location-dot"></i>Ahmedabad</span><span class="city"><i class="fa-solid fa-location-dot"></i>Vadodara</span><span class="city"><i class="fa-solid fa-location-dot"></i>Surat</span><span class="city"><i class="fa-solid fa-location-dot"></i>Jamnagar</span><span class="city"><i class="fa-solid fa-location-dot"></i>Junagadh</span><span class="city"><i class="fa-solid fa-location-dot"></i>Morbi</span><span class="city"><i class="fa-solid fa-location-dot"></i>Dwarka</span><span class="city"><i class="fa-solid fa-location-dot"></i>Somnath</span><span class="city"><i class="fa-solid fa-location-dot"></i>Porbandar</span><span class="city"><i class="fa-solid fa-location-dot"></i>Kutch-Bhuj</span>
+</div></div>
+</header>
+
+<section id="fleet"><div class="container">
+<div class="sec-head reveal"><div class="eyebrow">Our Fleet</div><h2>Ertiga to 46-Seat Bus — <span style="color:var(--saffron2)">clean & A/C</span></h2><p class="guj">સ્વચ્છ & A/C કાર • ટેન્ડ અને અનુભવી ડ્રાઈવર • ટ્રાન્સપરન્ટ ભાડું. Tap WhatsApp to get exact fare in 2 minutes.</p></div>
+<div class="fleet-grid">
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=800&auto=format&fit=crop" alt="Ertiga"><span class="seat">👥 6+1 Seater</span><span class="price">Most Booked</span></div><div class="f-body"><h3>Ertiga <small>Family Favourite</small></h3><p class="guj">અર્ટિગા – Family tour, long route comfort, extra luggage space.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ Pushback</span><span class="tag">One-Way Special</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20ERTIGA%20for%20my%20trip"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" alt="Brezza SUV"><span class="seat">👥 4+1 SUV</span><span class="price">Premium SUV</span></div><div class="f-body"><h3>Maruti Brezza <small>SUV Style</small></h3><p class="guj">મારુતિ સુઝુકી બ્રેઝા – Business travel, stylish & safe highway ride.</p><div class="f-meta"><span class="tag">✔ A/C</span><span class="tag">✔ High Ground</span><span class="tag">Airport Best</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20BREZZA%20SUV"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop" alt="Eeco Van"><span class="seat">👥 6+1 Budget</span><span class="price">Low Fare</span></div><div class="f-body"><h3>Eco Van <small>Budget King</small></h3><p class="guj">ઈકો – Local trip, short distance & parcel friendly low budget.</p><div class="f-meta"><span class="tag">✔ Budget</span><span class="tag">✔ Local Best</span><span class="tag">✔ Parcel</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919054100649?text=Hello%2C%20I%20want%20to%20book%20ECO%20van"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919054100649"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&auto=format&fit=crop" alt="Tempo Traveller"><span class="seat">👥 12 / 17 Seater</span><span class="price">Group Best</span></div><div class="f-body"><h3>Tempo Traveller <small>12-17 Seat</small></h3><p class="guj">ટેમ્પો બસ – Barat, family group, Somnath-Dwarka yatra special.</p><div class="f-meta"><span class="tag">✔ Pushback</span><span class="tag">✔ Music</span><span class="tag">Yatra Special</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20I%20want%20to%20book%20TEMPO%20TRAVELLER"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=800&auto=format&fit=crop" alt="Urbania"><span class="seat">👥 12-17 Luxury</span><span class="price">Premium</span></div><div class="f-body"><h3>Urbania Bus <small>Premium Traveller</small></h3><p class="guj">અર્બનિયા બસ – Premium feel, wedding / corporate / VIP movement.</p><div class="f-meta"><span class="tag">✔ Luxury</span><span class="tag">✔ A/C</span><span class="tag">Wedding</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/917990443834?text=Hello%2C%20I%20want%20to%20book%20URBANIA%20BUS"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+917990443834"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+<div class="f-card reveal"><div class="f-img"><img loading="lazy" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop" alt="Large Bus"><span class="seat">👥 30 / 46 Seater</span><span class="price">Bus</span></div><div class="f-body"><h3>Large Bus <small>30-46 Seat</small></h3><p>Full bus for baraat, school, company, yatra – Junagadh to all Gujarat.</p><div class="f-meta"><span class="tag">✔ 46 Seat</span><span class="tag">✔ Tour</span><span class="tag">Best Rate</span></div><div class="f-actions"><a class="mini-btn mini-wa" target="_blank" href="https://wa.me/919824549033?text=Hello%2C%20I%20want%20to%20book%2046-SEAT%20BUS"><i class="fa-brands fa-whatsapp"></i> Book</a><a class="mini-btn mini-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div></div>
+
+</div></div></section>
+
+<section id="services" style="background:#0E1522;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="container">
+<div class="sec-head reveal"><div class="eyebrow">Services</div><h2>One number for every travel need</h2><p>Special One-Way facility – pay only one side for selected routes. Transparent & proper fare.</p></div>
+<div class="svc-grid">
+<div class="svc reveal"><i class="fa-solid fa-arrow-right-arrow-left"></i><h4>One-Way Special</h4><p class="guj">ખાસ One-Way કાર સુવિધા – Junagadh ↔ Rajkot / Ahmedabad / Vadodara / Surat.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-rotate"></i><h4>Round Trip</h4><p>Outstation with halt – Dwarka, Somnath, Porbandar, Kutch-Bhuj, full Gujarat.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-city"></i><h4>Local Trip</h4><p>Junagadh local – Girnar, Uparkot, Sakkarbag, wedding / function duty.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-plane"></i><h4>Airport Pickup & Drop</h4><p>Rajkot (Hirasar), Ahmedabad, Porbandar airport – on-time flight tracking.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-train"></i><h4>Railway Pickup & Drop</h4><p>Junagadh / Rajkot station pickup any time – day or night 24x7.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-box"></i><h4>Parcel Service</h4><p class="guj">ઝડપી પાર્સલ સર્વિસ પણ ઉપલબ્ધ – safe small parcel city to city.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-people-roof"></i><h4>Family Tour</h4><p>Somnath – Dwarka – Porbandar – Gir – safe family yatra with experienced driver.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-briefcase"></i><h4>Business Travel</h4><p>Daily / monthly company duty, clean car, bill available.</p></div>
+<div class="svc reveal"><i class="fa-solid fa-heart"></i><h4>Marriage / Function</h4><p>Barat cars + buses decorated, multiple vehicles together.</p></div>
+</div></div></section>
+
+<section id="routes"><div class="container">
+<div class="sec-head reveal"><div class="eyebrow">Popular Routes</div><h2>Junagadh to anywhere in Gujarat</h2><p>Tap <i class="fa-brands fa-whatsapp"></i> to get fare instantly on WhatsApp.</p></div>
+<div class="routes" id="routeGrid"></div>
+</div></section>
+
+<section id="why"><div class="container why-grid">
+<div class="why-img reveal"><img src="https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?q=80&w=900&auto=format&fit=crop" alt="Driver"></div>
+<div><div class="eyebrow reveal">Why Ram Krupa?</div><h2 class="reveal" style="font-size:clamp(28px,3.5vw,40px);margin:10px 0">ગુજરાતમાં વિશ્વાસનું નામ</h2><p class="reveal" style="color:var(--muted)">Your every journey – comfortable, safe & memorable. Clean car, trained driver, right price.</p>
+<div class="why-list">
+<div class="why-item reveal"><i class="fa-solid fa-snowflake"></i><div><b>Clean & A/C Cars</b><br><span style="color:var(--muted);font-size:14px">Neat interior, chilled AC, sanitized before every trip.</span></div></div>
+<div class="why-item reveal"><i class="fa-solid fa-id-card"></i><div><b>Trained & Experienced Drivers</b><br><span style="color:var(--muted);font-size:14px">Polite, route-expert, night-driving trained, GPS tracked.</span></div></div>
+<div class="why-item reveal"><i class="fa-solid fa-indian-rupee-sign"></i><div><b>Transparent Proper Fare</b><br><span style="color:var(--muted);font-size:14px">No hidden charge. One-Way saving. Bill on demand.</span></div></div>
+<div class="why-item reveal"><i class="fa-solid fa-clock"></i><div><b>24x7 Available</b><br><span style="color:var(--muted);font-size:14px">Night airport? Early barat? One call – car at door.</span></div></div>
+</div></div></div></section>
+
+<section id="booking" style="background:linear-gradient(180deg,#0E1522,#0B0F14);border-top:1px solid var(--line)"><div class="container">
+<div class="sec-head reveal"><div class="eyebrow">Booking</div><h2>Book in 30 seconds on WhatsApp</h2><p>No app. No advance trap. Message us – we confirm car + driver + fare.</p></div>
+<div class="contact-grid">
+<div class="book-card reveal"><h3><i class="fa-solid fa-calendar-check"></i> Full Booking Form</h3><p>Details bharo – WhatsApp ready message ban jase.</p>
+<div class="f-row"><div><label>Your Name *</label><input id="bName" placeholder="e.g. Amit Patel"></div><div><label>Mobile *</label><input id="bPhone" placeholder="e.g. 98765 43210"></div></div>
+<div class="f-row"><div><label>Pickup *</label><input id="bPickup" placeholder="Junagadh"></div><div><label>Drop *</label><input id="bDrop" placeholder="Ahmedabad Airport"></div></div>
+<div class="f-row"><div><label>Date *</label><input id="bDate" type="date"></div><div><label>Time</label><input id="bTime" type="time"></div></div>
+<div class="f-row"><div><label>Trip Type</label><select id="bType"><option>One-Way</option><option>Round Trip</option><option>Local</option><option>Airport Pickup/Drop</option><option>Railway Pickup/Drop</option><option>Wedding / Function</option></select></div><div><label>Vehicle</label><select id="bVeh"><option>Ertiga</option><option>Brezza</option><option>Eco</option><option>Tempo Traveller</option><option>Urbania</option><option>46-Seat Bus</option><option>Any / Cheapest</option></select></div></div>
+<label>Note</label><textarea id="bNote" rows="2" placeholder="e.g. 4 persons + luggage, early morning pickup"></textarea>
+<button class="btn btn-wa book-btn" onclick="fullBook()"><i class="fa-brands fa-whatsapp"></i> Confirm on WhatsApp</button>
+</div>
+<div>
+<div class="phones">
+<div class="phone-card reveal"><b>88665 74486</b><span>Primary Booking • Guj / Hindi</span><div class="row"><a class="icon-btn ib-wa" target="_blank" href="https://wa.me/918866574486"><i class="fa-brands fa-whatsapp"></i> WA</a><a class="icon-btn ib-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i> Call</a></div></div>
+<div class="phone-card reveal"><b>98245 49033</b><span>Booking • Bus / Tempo</span><div class="row"><a class="icon-btn ib-wa" target="_blank" href="https://wa.me/919824549033"><i class="fa-brands fa-whatsapp"></i> WA</a><a class="icon-btn ib-call" href="tel:+919824549033"><i class="fa-solid fa-phone"></i> Call</a></div></div>
+<div class="phone-card reveal"><b>90541 00649</b><span>Booking • One-Way</span><div class="row"><a class="icon-btn ib-wa" target="_blank" href="https://wa.me/919054100649"><i class="fa-brands fa-whatsapp"></i> WA</a><a class="icon-btn ib-call" href="tel:+919054100649"><i class="fa-solid fa-phone"></i> Call</a></div></div>
+<div class="phone-card reveal"><b>79904 43834</b><span>Booking • Night 24x7</span><div class="row"><a class="icon-btn ib-wa" target="_blank" href="https://wa.me/917990443834"><i class="fa-brands fa-whatsapp"></i> WA</a><a class="icon-btn ib-call" href="tel:+917990443834"><i class="fa-solid fa-phone"></i> Call</a></div></div>
+</div>
+<div class="info-card reveal" style="margin-top:12px"><h3><i class="fa-solid fa-location-dot"></i> Ram Krupa Tour & Travels</h3><p style="margin:8px 0">Junagadh, Gujarat • All Gujarat Service<br>⏰ 24x7 Open • 📸 <a href="https://instagram.com/ramkarupa_toush_and_travel" target="_blank">@ramkarupa_toush_and_travel</a></p><a class="btn" style="background:#fff;color:#111;margin-top:8px" target="_blank" href="https://wa.me/918866574486?text=Hello%2C%20please%20share%20your%20location"><i class="fa-solid fa-location-arrow"></i> Get Location on WhatsApp</a></div>
+</div>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="container"><div class="sec-head reveal"><div class="eyebrow">Contact</div><h2>Call karo ya WhatsApp – turant reply</h2></div></div></section>
+
+<footer><div class="container foot"><div>© 2026 Ram Krupa Tour & Travels – Junagadh. All rights reserved.<br><span class="guj">રામ કૃપા – તમારી યાત્રા, અમારી જવાબદારી.</span></div><div style="text-align:right">Ertiga • Brezza • Eco • Tempo • Urbania • Bus<br><a href="https://wa.me/918866574486" style="color:#7CFFB0;font-weight:800">WhatsApp: 88665 74486</a></div></div></footer>
+
+<div class="float-wa"><a class="fw-wa" target="_blank" href="https://wa.me/918866574486?text=Hello%20Ram%20Krupa%20Travels%2C%20I%20want%20to%20book%20a%20car"><i class="fa-brands fa-whatsapp"></i></a><a class="fw-call" href="tel:+918866574486"><i class="fa-solid fa-phone"></i></a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+// Routes
+const routes=[["Junagadh","Rajkot"],["Junagadh","Ahmedabad"],["Junagadh","Vadodara"],["Junagadh","Surat"],["Junagadh","Jamnagar"],["Junagadh","Somnath"],["Junagadh","Dwarka"],["Junagadh","Porbandar"],["Junagadh","Morbi"],["Junagadh","Kutch-Bhuj"],["Rajkot Airport","Pickup/Drop"],["Ahmedabad Airport","Pickup/Drop"]];
+const rg=document.getElementById('routeGrid');
+routes.forEach(([a,b])=>{
+  const el=document.createElement('div');el.className='route reveal';
+  el.innerHTML=`<div><b>${a} → ${b}</b><span>One-Way / Round Trip</span></div><a target="_blank" href="https://wa.me/918866574486?text=${encodeURIComponent(`Hello, I want fare for ${a} to ${b}`)}"><i class="fa-brands fa-whatsapp"></i></a>`;
+  rg.appendChild(el);
+});
+
+// Trip pills
+let tripType="One-Way";
+document.querySelectorAll('#tripPills .pill').forEach(p=>p.addEventListener('click',()=>{
+  document.querySelectorAll('#tripPills .pill').forEach(x=>x.classList.remove('active'));
+  p.classList.add('active');tripType=p.dataset.v;
+}));
+function quickBook(){
+  const p=document.getElementById('qPickup').value||'Junagadh';
+  const d=document.getElementById('qDrop').value||'Rajkot';
+  const dt=document.getElementById('qDate').value||'ASAP';
+  const v=document.getElementById('qVeh').value;
+  const msg=`Hello Ram Krupa Travels,%0A*New Booking Request*%0A Trip: ${tripType}%0A Pickup: ${p}%0A Drop: ${d}%0A Date: ${dt}%0A Vehicle: ${v}%0APlease share fare & confirm.`;
+  window.open(`https://wa.me/918866574486?text=${msg}`,'_blank');
+}
+function fullBook(){
+  const n=document.getElementById('bName').value||'-';
+  const ph=document.getElementById('bPhone').value||'-';
+  const p=document.getElementById('bPickup').value||'-';
+  const d=document.getElementById('bDrop').value||'-';
+  const dt=document.getElementById('bDate').value||'-';
+  const t=document.getElementById('bTime').value||'-';
+  const ty=document.getElementById('bType').value;
+  const v=document.getElementById('bVeh').value;
+  const note=document.getElementById('bNote').value||'-';
+  if(n==='-'||ph==='-'||p==='-'||d==='-'){alert('Please fill Name, Mobile, Pickup, Drop');return;}
+  const txt=`Hello Ram Krupa Tour & Travels - Junagadh,%0A*Booking Request*%0AName: ${n}%0APhone: ${ph}%0AFrom: ${p}%0ATo: ${d}%0ADate: ${dt} Time: ${t}%0AType: ${ty}%0AVehicle: ${v}%0ANote: ${note}`;
+  window.open(`https://wa.me/918866574486?text=${txt}`,'_blank');
+}
+document.getElementById('ham').onclick=()=>document.getElementById('navLinks').classList.toggle('open');
+
+// GSAP
+gsap.registerPlugin(ScrollTrigger);
+let pct=0;const lp=document.getElementById('loadPct');
+const li=setInterval(()=>{pct=Math.min(100,pct+Math.random()*18);lp.textContent=Math.floor(pct)+'%';
+if(pct>=100){clearInterval(li);
+  gsap.to('#loader',{yPercent:-100,duration:.8,ease:'power4.inOut',onComplete:()=>document.getElementById('loader').remove()});
+  gsap.fromTo('.hero-anim',{y:44,opacity:0},{y:0,opacity:1,duration:.9,stagger:.12,ease:'power3.out',delay:.4});
+}},120);
+
+gsap.utils.toArray('.reveal').forEach(el=>{
+  gsap.fromTo(el,{y:36,opacity:0},{y:0,opacity:1,duration:.8,ease:'power3.out',
+    scrollTrigger:{trigger:el,start:'top 88%'}});
+});
+gsap.to('#heroBgImg',{yPercent:14,scale:1.12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+// duplicate city track for loop
+const ct=document.getElementById('cityTrack');ct.innerHTML+=ct.innerHTML;
+// counters
+document.querySelectorAll('.counter').forEach(c=>{
+  const target=+c.dataset.target;
+  ScrollTrigger.create({trigger:c,start:'top 92%',once:true,onEnter:()=>{
+    gsap.fromTo(c,{innerText:0},{innerText:target,duration:1.6,snap:{innerText:1},ease:'power1.out',onUpdate:function(){c.textContent=Math.floor(+c.textContent).toLocaleString('en-IN')}});
+  }});
+});
+</script>
+</body>
+</html>
