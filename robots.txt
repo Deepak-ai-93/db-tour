@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deepak-ai-93.github.io/db-tour/sitemap.xml
+
+# ---- Allow AI / LLM crawlers (helps AEO) ----
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: claudebot
+Allow: /
+
+User-agent: CCBot
+Allow: /
