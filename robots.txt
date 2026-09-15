@@ -1,7 +1,7 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://deepak-ai-93.github.io/db-tour/sitemap.xml
+Sitemap: https://ramkrupatravel.in/sitemap.xml
 
 # ---- Allow AI / LLM crawlers (helps AEO) ----
 User-agent: GPTBot

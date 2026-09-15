@@ -1,10 +1,10 @@
-# Ram Krupa Tour & Travels — Junagadh
+﻿# Ram Krupa Tour & Travels — Junagadh
 
 > Trusted travel agency & taxi service in Junagadh, Gujarat. Ertiga, Brezza, Eco, Tempo Traveller, Urbania & 46-seat bus for One-Way, Round Trip, Local Trip, Airport & Railway Pickup/Drop and Parcel Service. Open 24x7. WhatsApp 90541 00649 (Harsh) • 88665 75486 (Kalpesh).
 
 ## Key details
-- [Ram Krupa Tour & Travels — Homepage](https://deepak-ai-93.github.io/db-tour/)
-- [Full site guide (Markdown)](https://deepak-ai-93.github.io/db-tour/web.md)
+- [Ram Krupa Tour & Travels — Homepage](https://ramkrupatravel.in/)
+- [Full site guide (Markdown)](https://ramkrupatravel.in/web.md)
 
 ## Services
 - One-Way taxi (Junagadh ↔ Rajkot / Ahmedabad / Vadodara / Surat)
